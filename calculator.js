@@ -47,6 +47,10 @@ describe ("Create a simple String calculator with a method int Add", function(){
 	it("sum", function() {
 		expect(f_sum(1)).toEqual(parseInt("1"));
 	});
+
+	it("sum", function() {
+		expect(f_sum(2)).toEqual(parseInt("2"));
+	});
 });
 
 
