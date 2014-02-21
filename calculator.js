@@ -59,6 +59,10 @@ describe ("Create a simple String calculator with a method int Add", function(){
 	it("should sum 1 + 1 and return 2", function() {
 		expect(f_sum(1, 1)).toEqual(parseInt("2"));
 	});
+
+	it("should sum 3 + 3 + 3 and return 9", function() {
+		expect(f_sum(3, 3, 3)).toEqual(parseInt("9"));
+	});
 });
 
 
