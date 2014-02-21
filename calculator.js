@@ -39,13 +39,12 @@ make sure you can also handle multiple delimiters with length longer than one ch
 
 
 function f_sum(valorA, valorB, valorC) {
-	if (typeof(valorB) === "undefined" && typeof(valorC) === "undefined"){
-	return valorA;}
+	if (valorA === "") return 0;
+	else if (typeof(valorB) === "undefined" && typeof(valorC) === "undefined")
+	return valorA
 	else if (typeof(valorC) === "undefined")
-	return valorA + valorB
-	else {
-		return valorA + valorB + valorC;
-	}
+	return valorA + valorB 
+	else {return valorA + valorB + valorC}
 }
 
 
@@ -67,7 +66,7 @@ describe ("Create a simple String calculator with a method int Add", function(){
 	});
 
 	it("should return 0", function() {
-		expect(f_sum("")).toEqual(parseInt(0));
+		expect(f_sum("")).toEqual(parseInt("0"));
 	});
 });
 
