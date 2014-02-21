@@ -23,6 +23,19 @@ Remember to refactor after each passing test
 
 
 Allow the Add method to handle an unknown amount of numbers
+
+1,2,3,4,5 -> 15
+1,2,3,4,5,6,7,8,9,10 ->  52
+
+
+
+
+
+
+
+
+
+
 Allow the Add method to handle new lines between numbers (instead of commas).
 the following input is ok:  “1\n2,3”  (will equal 6)
 the following input is NOT ok:  “1,\n” (not need to prove it - just clarifying)
@@ -70,6 +83,13 @@ describe ("Create a simple String calculator with a method int Add", function(){
 	});
 });
 
+// EXERCISE 02
+
+describe ("Allow the Add method to handle an unknown amount of numbers", function(){
+	it("should allow the Add method to handle 5 as an amount of numbers", function() {
+		expect(f_sum(1,2,3,4,5)).toEqual(parseInt("15"));
+	});
+});
 
 
 
