@@ -51,13 +51,13 @@ make sure you can also handle multiple delimiters with length longer than one ch
 */
 
 
-function f_sum(valorA, valorB, valorC) {
-	if (valorA === "") return 0;
-	else if (typeof(valorB) === "undefined" && typeof(valorC) === "undefined")
-	return valorA
-	else if (typeof(valorC) === "undefined")
-	return valorA + valorB 
-	else {return valorA + valorB + valorC}
+function f_sum() {
+	var sumatotal = 0
+	if (arguments[0] === "") return 0;
+	for (var i = 0; i < arguments.length; i++) {
+		sumatotal = sumatotal + arguments[i];
+	}
+	return sumatotal
 }
 
 
