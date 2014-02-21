@@ -39,7 +39,7 @@ make sure you can also handle multiple delimiters with length longer than one ch
 
 
 function f_sum(valorA) {
-	return 1;
+	return valorA;
 }
 
 
