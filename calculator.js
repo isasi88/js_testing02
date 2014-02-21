@@ -38,8 +38,12 @@ make sure you can also handle multiple delimiters with length longer than one ch
 */
 
 
-function f_sum(valorA) {
-	return valorA;
+function f_sum(valorA, valorB) {
+	if (typeof(valorB) === "undefined"){
+	return valorA;}
+	else {
+		return valorA + valorB;
+	}
 }
 
 
