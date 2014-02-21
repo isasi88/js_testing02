@@ -44,12 +44,16 @@ function f_sum(valorA) {
 
 
 describe ("Create a simple String calculator with a method int Add", function(){
-	it("sum", function() {
+	it("should sum 1", function() {
 		expect(f_sum(1)).toEqual(parseInt("1"));
 	});
 
-	it("sum", function() {
+	it("should sum 2", function() {
 		expect(f_sum(2)).toEqual(parseInt("2"));
+	});
+
+	it("should sum 1 + 1 and return 2", function() {
+		expect(f_sum(1, 1)).toEqual(parseInt("2"));
 	});
 });
 
